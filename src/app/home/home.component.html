@@ -1,0 +1,17 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <div class="row">
+    <div class="col-md-4 m-auto py-2">
+      <input class="form-control" type="text" placeholder="Username" formControlName="username"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 m-auto py-2">
+      <input class="form-control" type="password" placeholder="Password" formControlName="password"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 m-auto py-2">
+      <button class="btn btn-primary btn-block" type="submit">Login</button>
+    </div>
+  </div>
+</form>
